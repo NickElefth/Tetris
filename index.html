@@ -1,0 +1,55 @@
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="app.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"></link>
+  <title>Tetris Basics</title>
+</head>
+<body>
+
+  <div class="intro">
+    <h1>Welcome to Tetris</h1>
+  </div>
+
+  <div class="game">
+    <div class="grid-container">
+      <div class="grid-border">
+        <div class="grid"></div>
+      </div>
+    </div>
+    <div class="side-display">
+      <h3>Score: <span id="score">0</span></h3>
+      <div class="mini-grid-container">
+        <h3>Up next:</h3>
+        <div class="mini-grid"></div>
+      </div>
+      <button class="standard-button" id="start-button">Start/Pause</button>
+      <button class="standard-button" id="instructions-button">Instructions</button>
+      <button class="standard-button" id="restart-button">Restart</button>
+    </div>
+  </div>
+
+  <div id="instructions-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span id="instructions-close">&times;</span>
+      <h3>Instructions</h3>
+        <ul>
+          <li> Click start to begin </li>
+          <li> Use the Left and Right arrows to move the tetrominos </li>
+          <li> Use the Up arrow to rotate the Tetrominos </li>
+          <li> Use the Down arrow to move the Tetromino Down </li>
+        </ul>
+      <h3>Goal</h3>
+      <p>
+        You have to make full horizontal lines with the different shaped blocks that fall into the game area.
+        Full lines will then disappear and provide points. The more lines you make at the same time, the more points you earn.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>

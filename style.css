@@ -1,0 +1,145 @@
+body {
+  background-image: linear-gradient(to bottom right, #F0F8FF, #6495ED);
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+}
+
+.intro h1 {
+  font-family: 'Piedra', cursive;
+  font-size: 3rem;
+}
+
+/* GRID PROPERTIES */
+.game {
+  display: flex;
+  justify-content: center;
+}
+.grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-border {
+  display: flex;
+  width: 240px;
+  height: 420px;
+  background-image: url('squares/border-blocks.jpg');
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  background-color: #C0C0C0;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+/* SIDE DISPLAY PROPERTIES */
+.side-display h3 {
+  margin-top: 0px;
+  margin-left: 50px;
+  font-family: 'Piedra', cursive;
+  font-size: 1.4rem;
+}
+
+#score {
+  color: red;
+}
+
+.mini-grid-container h3 {
+  margin-bottom: 10px;
+}
+
+.mini-grid {
+  background-color: #C0C0C0;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  border-style: outset;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.standard-button {
+  margin-left: 50px;
+  height: 50px;
+  width: 110px;
+  display: block;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #6495ED;
+}
+
+.standard-button:hover {
+  background-color: #1867f5;
+  cursor: pointer;
+  color: white;
+}
+
+/* MODAL PROPERTIES */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-image: linear-gradient(to bottom right, #F0F8FF, #6495ED);;
+  margin: 15% auto;
+  padding: 15px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content h3 {
+  font-family: 'Piedra', cursive;
+  font-size: 2rem;
+}
+
+#instructions-close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#instructions-close:hover,
+#instructions-close:focus {
+  color: #1867f5;
+  text-decoration: none;
+  cursor: pointer;
+}
